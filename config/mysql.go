@@ -8,7 +8,7 @@ import (
 )
 
 func ConnectMysqlGORM() (*gorm.DB, error) {
-	dsn := "root:@tcp(127.0.0.1:3306)/golang?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "mysql://root:59Ll41dBZ2omHpm44vZq@containers-us-west-99.railway.app:7446/railway"
 
 	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 
